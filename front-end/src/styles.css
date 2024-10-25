@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap');
+
+/* CSS Variables */
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #f8f9fa;
+  --accent-color-1: #FF9F1C;
+  --accent-color-2: #8A4FFF;
+  --accent-color-3: #FF4B8B;
+  --accent-color-4: #FFD700;
+  --text-color: #333333;
+  --light-text: #ffffff;
+  --button-color: #FF4B8B;
+  --button-hover: #FF6B8B;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 30px;
+}

@@ -4,7 +4,7 @@ import { Sidebar } from "../components/sidebar";
 import './settings.css';
 
 
-export function settings(){
+export function Settings(){
     useEffect(() => {
         settingsLogic();
     }, []);

@@ -1,8 +1,8 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import * as THREE from 'three';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// import * as THREE from 'three';
 import React, { useState, useEffect } from 'react';
-import Chart from 'react-apexcharts';
+// import Chart from 'react-apexcharts';
 
 
 
@@ -63,11 +63,34 @@ export function pLogic(){
         });
 }
 
+export function settingsLogic() {
+    // Active link handler for the current path
+    const currentPath = window.location.pathname;
+    document.querySelectorAll('.nav-link').forEach(link => {
+        if (link.getAttribute('href').endsWith(currentPath)) {
+            link.classList.add('active');
+        }
+    });
 
-// Simple modal component
+    // Event listener for save button notifications
+    document.querySelectorAll('.save-button').forEach(button => {
+        button.addEventListener('click', function () {
+            alert('Settings saved successfully!');
+        });
+    });
+
+    // Toggle switch state persistence
+    document.querySelectorAll('.toggle-switch input').forEach(toggle => {
+        toggle.addEventListener('change', function () {
+            const setting = this.closest('.setting-item').querySelector('.setting-name').textContent;
+            console.log(`${setting} is now ${this.checked ? 'enabled' : 'disabled'}`);
+        });
+    });
+}
+
+// Modal component
 const ConfirmationModal = ({ isOpen, onConfirm, onCancel, message }) => {
     if (!isOpen) return null;
-
     return (
         <div className="modal-overlay">
             <div className="modal">
@@ -81,29 +104,15 @@ const ConfirmationModal = ({ isOpen, onConfirm, onCancel, message }) => {
     );
 };
 
+// Settings component with React hooks
 const Settings = () => {
     const [isModalOpen, setModalOpen] = useState(false);
 
-    // Active link handler
     useEffect(() => {
-        const currentPath = window.location.pathname;
-        document.querySelectorAll('.nav-link').forEach(link => {
-            if (link.getAttribute('href').endsWith(currentPath)) {
-                link.classList.add('active');
-            }
-        });
+        // Call the settings logic once on component mount
+        settingsLogic();
     }, []);
 
-    // Save notification
-    useEffect(() => {
-        document.querySelectorAll('.save-button').forEach(button => {
-            button.addEventListener('click', function () {
-                alert('Settings saved successfully!');
-            });
-        });
-    }, []);
-
-    // Delete account confirmation
     const handleDeleteButtonClick = () => {
         setModalOpen(true);
     };
@@ -117,19 +126,11 @@ const Settings = () => {
         setModalOpen(false);
     };
 
-    // Toggle switch state persistence
-    useEffect(() => {
-        document.querySelectorAll('.toggle-switch input').forEach(toggle => {
-            toggle.addEventListener('change', function () {
-                const setting = this.closest('.setting-item').querySelector('.setting-name').textContent;
-                console.log(`${setting} is now ${this.checked ? 'enabled' : 'disabled'}`);
-            });
-        });
-    }, []);
-
     return (
         <div>
-            <button className="danger-button" onClick={handleDeleteButtonClick}>Delete Account</button>
+            <button className="danger-button" onClick={handleDeleteButtonClick}>
+                Delete Account
+            </button>
             <ConfirmationModal
                 isOpen={isModalOpen}
                 onConfirm={handleConfirm}

@@ -1,8 +1,9 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import * as THREE from 'three';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Chart from 'react-apexcharts';
+
 
 
 export function Logic() {
@@ -62,34 +63,81 @@ export function pLogic(){
         });
 }
 
-export function settingsLogic(){
+
+// Simple modal component
+const ConfirmationModal = ({ isOpen, onConfirm, onCancel, message }) => {
+    if (!isOpen) return null;
+
+    return (
+        <div className="modal-overlay">
+            <div className="modal">
+                <p>{message}</p>
+                <div className="modal-buttons">
+                    <button onClick={onCancel}>Cancel</button>
+                    <button onClick={onConfirm}>Confirm</button>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+const Settings = () => {
+    const [isModalOpen, setModalOpen] = useState(false);
+
     // Active link handler
-    const currentPath = window.location.pathname;
-    document.querySelectorAll('.nav-link').forEach(link => {
-      if (link.getAttribute('href').endsWith(currentPath)) {
-        link.classList.add('active');
-      }
-    });
+    useEffect(() => {
+        const currentPath = window.location.pathname;
+        document.querySelectorAll('.nav-link').forEach(link => {
+            if (link.getAttribute('href').endsWith(currentPath)) {
+                link.classList.add('active');
+            }
+        });
+    }, []);
 
     // Save notification
-    document.querySelectorAll('.save-button').forEach(button => {
-      button.addEventListener('click', function() {
-        alert('Settings saved successfully!');
-      });
-    });
+    useEffect(() => {
+        document.querySelectorAll('.save-button').forEach(button => {
+            button.addEventListener('click', function () {
+                alert('Settings saved successfully!');
+            });
+        });
+    }, []);
 
     // Delete account confirmation
-    document.querySelector('.danger-button').addEventListener('click', function() {
-      if (confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
+    const handleDeleteButtonClick = () => {
+        setModalOpen(true);
+    };
+
+    const handleConfirm = () => {
+        setModalOpen(false);
         alert('Account deletion request submitted.');
-      }
-    });
+    };
+
+    const handleCancel = () => {
+        setModalOpen(false);
+    };
 
     // Toggle switch state persistence
-    document.querySelectorAll('.toggle-switch input').forEach(toggle => {
-      toggle.addEventListener('change', function() {
-        const setting = this.closest('.setting-item').querySelector('.setting-name').textContent;
-        console.log(`${setting} is now ${this.checked ? 'enabled' : 'disabled'}`);
-      });
-    });
-}
+    useEffect(() => {
+        document.querySelectorAll('.toggle-switch input').forEach(toggle => {
+            toggle.addEventListener('change', function () {
+                const setting = this.closest('.setting-item').querySelector('.setting-name').textContent;
+                console.log(`${setting} is now ${this.checked ? 'enabled' : 'disabled'}`);
+            });
+        });
+    }, []);
+
+    return (
+        <div>
+            <button className="danger-button" onClick={handleDeleteButtonClick}>Delete Account</button>
+            <ConfirmationModal
+                isOpen={isModalOpen}
+                onConfirm={handleConfirm}
+                onCancel={handleCancel}
+                message="Are you sure you want to delete your account? This action cannot be undone."
+            />
+        </div>
+    );
+};
+
+export default Settings;

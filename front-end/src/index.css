@@ -9,7 +9,18 @@
   --text-color: #333333;
   --light-text: #ffffff;
   --button-color: #FF4B8B;
-  --button-hover: #FF6B8B;
+  --button-hover: #FF6B8B;  
+
+
+
+
+  --primary-color-dashboard: #FF4B8B;
+  --secondary-color-dashboard: #8B54FF;
+  --accent-color-1-dashboard: #FF8B4B;
+  --accent-color-2-dashboard: #FFB54B;
+  --dashboard-bg-color: #f5f7fa;
+  --text-color-dashboard: #2c3e50;
+  --sidebar-width-dashboard: 250px;
 }
 * {
   margin: 0;

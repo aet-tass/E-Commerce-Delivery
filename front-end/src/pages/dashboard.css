@@ -5,7 +5,7 @@
   }
   
   .dashboard-sidebar {
-    width: var(--sidebar-width);
+    width: var(--sidebar-width-dashboard);
     background: white;
     padding: 20px;
     box-shadow: 2px 0 10px rgba(0,0,0,0.1);
@@ -23,7 +23,7 @@
   .logo {
     font-size: 24px;
     font-weight: bold;
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(45deg, var(--primary-color-dashboard), var(--secondary-color-dashboard));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -41,7 +41,7 @@
     align-items: center;
     padding: 12px 15px;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-color-dashboard);
     border-radius: 8px;
     transition: all 0.3s ease;
   }
@@ -53,19 +53,19 @@
   }
   
   .nav-link:hover {
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(45deg, var(--primary-color-dashboard), var(--secondary-color-dashboard));
     color: white;
   }
   
   .nav-link.active {
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(45deg, var(--primary-color-dashboard), var(--secondary-color-dashboard));
     color: white;
   }
   
   .dashboard-main {
-    margin-left: var(--sidebar-width);
+    margin-left: var(--sidebar-width-dashboard);
     padding: 30px;
-    width: calc(100% - var(--sidebar-width));
+    width: calc(100% - var(--sidebar-width-dashboard));
   }
   
   .dashboard-header {
@@ -150,7 +150,7 @@
   }
   
   .stat-bar {
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(45deg, var(--primary-color-dashboard), var(--secondary-color-dashboard));
     color: white;
     padding: 8px 15px;
     border-radius: 20px;
@@ -178,7 +178,7 @@
   }
   
   .progress-bar {
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(45deg, var(--primary-color-dashboard), var(--secondary-color-dashboard));
     color: white;
     padding: 8px 15px;
     text-align: right;
@@ -288,7 +288,7 @@
     position: absolute;
     top: -5px;
     right: -5px;
-    background: var(--primary-color);
+    background: var(--primary-color-dashboard);
     color: white;
     width: 20px;
     height: 20px;

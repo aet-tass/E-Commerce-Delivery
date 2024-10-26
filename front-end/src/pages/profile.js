@@ -1,14 +1,16 @@
 import React, { useEffect } from 'react';
-import { profileLogic } from './pages';
+import { pLogic } from './pages';
+import { Sidebar } from '../components/sidebar';
+import './profile.css';
 
 
-
-export function profileLogic(){
+export function Profile(){
     useEffect(() => {
-        profileLogic();
+        pLogic();
     }, []);
     return(
-        <div className="dashboard-container">
+<div className="dashboard-container">
+<Sidebar />
   {/* Main Content */}
   <main className="profile-main">
     <div className="profile-header">

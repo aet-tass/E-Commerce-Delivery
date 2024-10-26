@@ -33,7 +33,7 @@ export function dashboardLogic(){
 }
 
 
-export function profileLogic(){
+export function pLogic(){
         // Active link handler
         const currentPath = window.location.pathname;
         document.querySelectorAll('.nav-link').forEach(link => {

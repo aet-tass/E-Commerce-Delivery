@@ -30,7 +30,12 @@
   --text-color-profile: #2c3e50;
   --sidebar-width-profile: 250px;
 
-  
+  --primary-color-settings: #FF4B8B;
+  --secondary-color-settings: #8B54FF;
+  --accent-color-1-settings: #FF8B4B;
+  --accent-color-2-settings: #FFB54B;
+  --bg-color-settings: #f5f7fa;
+  --text-color-settings: #2c3e50;
 }
 * {
   margin: 0;

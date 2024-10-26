@@ -21,6 +21,16 @@
   --dashboard-bg-color: #f5f7fa;
   --text-color-dashboard: #2c3e50;
   --sidebar-width-dashboard: 250px;
+
+  --primary-color-profile: #FF4B8B;
+  --secondary-color-profile: #8B54FF;
+  --accent-color-1-profile: #FF8B4B;
+  --accent-color-2-profile: #FFB54B;
+  --bg-color-profile: #f5f7fa;
+  --text-color-profile: #2c3e50;
+  --sidebar-width-profile: 250px;
+
+  
 }
 * {
   margin: 0;

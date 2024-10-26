@@ -74,7 +74,7 @@ export function Dashboard(){
           </div>
           <div
             className="stat-icon"
-            style={{ background: "var(--primary-color)" }}
+            style={{ background: "var(--primary-color-dashboard)" }}
           >
             <i className="fas fa-shopping-cart" />
           </div>
@@ -88,7 +88,7 @@ export function Dashboard(){
           </div>
           <div
             className="stat-icon"
-            style={{ background: "var(--secondary-color)" }}
+            style={{ background: "var(--secondary-color-dashboard)" }}
           >
             <i className="fas fa-dollar-sign" />
           </div>

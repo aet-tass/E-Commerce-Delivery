@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./dashboard.css";
 import { dashboardLogic } from "./pages";
+import { Sidebar } from "../components/sidebar";
 
 export function Dashboard(){
     useEffect(() => {
@@ -9,7 +10,8 @@ export function Dashboard(){
     
     return (
         <div className="dashboard-container">
-  <aside className="dashboard-sidebar">
+        <Sidebar />
+  {/* <aside className="dashboard-sidebar">
     <div className="logo-container">
       <div className="logo">Delivee Express</div>
     </div>
@@ -48,7 +50,7 @@ export function Dashboard(){
         </a>
       </li>
     </ul>
-  </aside>
+  </aside> */}
   <main className="dashboard-main">
     <div className="dashboard-header">
       <h1 className="welcome-text">Welcome back, John!</h1>

@@ -1,6 +1,9 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import * as THREE from 'three';
+import React from 'react';
+import Chart from 'react-apexcharts';
+
 
 export function Logic() {
     // Tab switching functionality
@@ -16,4 +19,15 @@ export function Logic() {
             });
         });
     }
+}
+
+
+
+export function dashboardLogic(){
+    const currentPath = window.location.pathname;
+    document.querySelectorAll('.nav-link').forEach(link => {
+      if (link.getAttribute('href').endsWith(currentPath)) {
+        link.classList.add('active');
+      }
+    });
 }

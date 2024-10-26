@@ -11,7 +11,7 @@ export function Hero() {
                 services with Delivee Express.
             </p>
             <div className="cta-buttons">
-                <a href="#" className="cta-button">
+                <a href="/login" className="cta-button">
                 Start Shipping
                 </a>
                 <a href="#" className="cta-button secondary">

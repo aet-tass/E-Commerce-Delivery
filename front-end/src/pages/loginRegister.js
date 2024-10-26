@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Logic } from '../components/tets';
+import { Logic } from './pages';
 import './loginRegister.css';
 import { Header } from '../components/header';
 

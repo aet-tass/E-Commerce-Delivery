@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function Sidebar() {
     return (
@@ -8,10 +9,10 @@ export function Sidebar() {
             </div>
             <ul className="nav-menu">
                 <li className="nav-item">
-                    <a href="https://delivee.express.com/dashboard" className="nav-link active">
-                        <i className="fas fa-chart-line" />
-                        <span>Dashboard</span>
-                    </a>
+                    <Link to="/dashboard" className="nav-link active">
+                    <i className="fas fa-chart-line" />
+                    <span>Dashboard</span>
+                    </Link>
                 </li>
                 <li className="nav-item">
                     <a href="https://delivee.express.com/shop" className="nav-link">
@@ -26,16 +27,16 @@ export function Sidebar() {
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a href="https://delivee.express.com/profile" className="nav-link">
-                        <i className="fas fa-user" />
-                        <span>Profile</span>
-                    </a>
+                    <Link to="/profile" className="nav-link">
+                    <i className="fas fa-user" />
+                    <span>Profile</span>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <a href="https://delivee.express.com/settings" className="nav-link">
-                        <i className="fas fa-cog" />
-                        <span>Settings</span>
-                    </a>
+                    <Link to="/settings" className="nav-link">
+                    <i className="fas fa-cog" />
+                    <span>Settings</span>
+                    </Link>
                 </li>
             </ul>
         </aside>

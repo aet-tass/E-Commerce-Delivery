@@ -38,33 +38,15 @@ export function LoginRegister() {
                     <i className="fas fa-lock" />
                     <input type="password" id="loginPassword" required="" />
                 </div>
-                <a href="#" className="forgot-password">
-                    Forgot Password?
-                </a>
                 </div>
                 <button type="submit" className="auth-button">
                 <span>Login</span>
                 <i className="fas fa-arrow-right" />
                 </button>
-                <div className="social-auth">
-                <p>Or continue with</p>
-                <div className="social-buttons">
-                    <button type="button" className="social-button google">
-                    <i className="fab fa-google" />
-                    </button>
-                    <button type="button" className="social-button facebook">
-                    <i className="fab fa-facebook-f" />
-                    </button>
-                    <button type="button" className="social-button apple">
-                    <i className="fab fa-apple" />
-                    </button>
-                </div>
-                </div>
             </form>
             {/* Register Form */}
             <form id="registerForm" className="auth-form">
                 <h2>Create Account</h2>
-                <p className="auth-subtitle">Join our delivery network</p>
                 <div className="form-group">
                 <label htmlFor="registerName">Full Name</label>
                 <div className="input-wrapper">
@@ -117,11 +99,6 @@ export function LoginRegister() {
                 <span>Create Account</span>
                 <i className="fas fa-arrow-right" />
                 </button>
-                <div className="terms">
-                By registering, you agree to our
-                <a href="#">Terms of Service</a> and
-                <a href="#">Privacy Policy</a>
-                </div>
             </form>
             </div>
         </div>

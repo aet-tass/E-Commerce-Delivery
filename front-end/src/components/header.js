@@ -12,10 +12,7 @@ export function Header() {
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">About Us</a></li>
-                    <li><a href="#track">Track Package</a></li>
-                    <li><a href="#contact-form" className="contact-us-link">Contact Us</a></li>
                     <li>
-                    
                     <a
                         href="/login"
                         className="cta-button"

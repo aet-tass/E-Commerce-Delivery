@@ -6,6 +6,7 @@ import Page from './pages/Page';
 import { Dashboard } from './pages/dashboard';
 import { Profile } from './pages/profile';
 import { Settings } from './pages/settings';
+import { Shop } from "./pages/shop";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/profile" element={<Profile/>} />
       <Route path="/settings" element={<Settings/>} />
+      <Route path="/shop" element={<Shop />} /> 
     </Routes>
     </BrowserRouter>  
 

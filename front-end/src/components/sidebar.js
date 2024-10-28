@@ -15,10 +15,10 @@ export function Sidebar() {
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <a href="https://delivee.express.com/shop" className="nav-link">
-                        <i className="fas fa-store" />
-                        <span>Shop</span>
-                    </a>
+                    <Link to="/shop" className="nav-link">
+                    <i className="fas fa-store" />
+                    <span>shop</span>
+                    </Link>
                 </li>
                 <li className="nav-item">
                     <a href="https://delivee.express.com/orders" className="nav-link">
@@ -30,12 +30,6 @@ export function Sidebar() {
                     <Link to="/profile" className="nav-link">
                     <i className="fas fa-user" />
                     <span>Profile</span>
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/settings" className="nav-link">
-                    <i className="fas fa-cog" />
-                    <span>Settings</span>
                     </Link>
                 </li>
             </ul>

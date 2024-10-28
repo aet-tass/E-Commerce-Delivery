@@ -7,6 +7,7 @@ import { Dashboard } from './pages/dashboard';
 import { Profile } from './pages/profile';
 import { Settings } from './pages/settings';
 import { Shop } from "./pages/shop";
+import { Notifications } from "./pages/notifications";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
       <Route path="/profile" element={<Profile/>} />
       <Route path="/settings" element={<Settings/>} />
       <Route path="/shop" element={<Shop />} /> 
+      <Route path="/notifications" element={<Notifications />} /> 
+
     </Routes>
     </BrowserRouter>  
 

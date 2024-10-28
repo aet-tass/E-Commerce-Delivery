@@ -32,6 +32,12 @@ export function Sidebar() {
                     <span>Profile</span>
                     </Link>
                 </li>
+                <li className="nav-item">
+                    <Link to="/notifications" className="nav-link">
+                        <i className="fas fa-bell" />
+                        <span>Notifications</span>
+                    </Link>
+                </li>
             </ul>
         </aside>
     );

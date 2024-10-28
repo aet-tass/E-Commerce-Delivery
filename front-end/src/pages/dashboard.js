@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./dashboard.css";
 import { dashboardLogic } from "./pages";
 import { Sidebar } from "../components/sidebar";
+import { Link } from "react-router-dom";
 
 export function Dashboard(){
     useEffect(() => {
@@ -53,17 +54,12 @@ export function Dashboard(){
   </aside> */}
   <main className="dashboard-main">
     <div className="dashboard-header">
-      <h1 className="welcome-text">Welcome back, John!</h1>
+      <h1 className="welcome-text">Welcome back !</h1>
       <div className="quick-actions">
-        <button className="action-btn">
-          <i className="fas fa-plus" />
-          New Order
-        </button>
         <div className="notifications">
-          <button className="action-btn">
-            <i className="fas fa-bell" />
-          </button>
-          <span className="notification-badge">3</span>
+        <Link to="/notifications" className="nav-link">
+          <i className="fas fa-bell" />
+        </Link>
         </div>
       </div>
     </div>

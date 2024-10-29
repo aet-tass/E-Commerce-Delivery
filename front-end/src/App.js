@@ -7,6 +7,7 @@ import { Dashboard } from './pages/dashboard';
 import { Profile } from './pages/profile';
 import { Settings } from './pages/settings';
 import { MyOrders } from './pages/myOrders';
+import { Shope } from './pages/shop';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <Route path="/profile" element={<Profile/>} />
       <Route path="/settings" element={<Settings/>} />
       <Route path="/myOrders" element={<MyOrders/>} />
-      <Route path="/shop" element={<Shop/>} />
+      {/* <Route path="/shop" element={<Shope/>} /> */}
     </Routes>
     </BrowserRouter>  
 

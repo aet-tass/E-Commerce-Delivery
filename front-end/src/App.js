@@ -6,6 +6,7 @@ import Page from './pages/Page';
 import { Dashboard } from './pages/dashboard';
 import { Profile } from './pages/profile';
 import { Settings } from './pages/settings';
+import { MyOrders } from './pages/myOrders';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/profile" element={<Profile/>} />
       <Route path="/settings" element={<Settings/>} />
+      <Route path="/myOrders" element={<MyOrders/>} />
     </Routes>
     </BrowserRouter>  
 

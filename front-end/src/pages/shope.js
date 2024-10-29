@@ -1,4 +1,6 @@
 import { useEffect } from "react"
+import { shopLogic, filterByCategory } from "./pages";
+import './shop.css';
 
 export function shop(){
     useEffect(() => {

@@ -10,7 +10,7 @@ export function Settings(){
     }, []);
     return (
 <div className="dashboard-container">
-    '<Sidebar />
+    {/* <Sidebar /> */}
   {/* Main Content */}
   <main className="settings-main">
     <div className="settings-header">

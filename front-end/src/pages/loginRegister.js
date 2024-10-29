@@ -7,7 +7,7 @@ export function LoginRegister() {
     useEffect(() => {
         Logic();
     }, []);
-    
+
     return (
         <div>
             <Header />
@@ -18,6 +18,7 @@ export function LoginRegister() {
                             <button className="auth-tab active" data-tab="login">Login</button>
                             <button className="auth-tab" data-tab="register">Register</button>
                         </div>
+                        
                         {/* Login Form */}
                         <form id="loginForm" className="auth-form active">
                             <h2>Welcome Back</h2>
@@ -56,6 +57,7 @@ export function LoginRegister() {
                                 </div>
                             </div>
                         </form>
+
                         {/* Register Form */}
                         <form id="registerForm" className="auth-form">
                             <h2>Create Account</h2>
@@ -110,6 +112,15 @@ export function LoginRegister() {
                                     </select>
                                 </div>
                             </div>
+
+                            {/* New Image Upload Field */}
+                            <div className="form-group">
+                                <label htmlFor="profileImage">Profile Image</label>
+                                <div className="input-wrapper">
+                                    <input type="file" id="profileImage" accept="image/*" />
+                                </div>
+                            </div>
+
                             <div className="form-group">
                                 <label htmlFor="registerPassword">Password</label>
                                 <div className="input-wrapper">

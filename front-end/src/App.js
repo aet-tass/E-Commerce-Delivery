@@ -7,8 +7,6 @@ import { Dashboard } from './pages/dashboard';
 import { Profile } from './pages/profile';
 import { Settings } from './pages/settings';
 import { MyOrders } from './pages/myOrders';
-import { Shope } from './pages/shop';
-
 function App() {
   return (
     <>

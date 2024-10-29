@@ -1,4 +1,10 @@
+import { useEffect } from "react"
+
 export function shop(){
+    useEffect(() => {
+        shopLogic();
+        filterByCategory('all');
+    }, []);
     return (<>
         <base href="https://delivee.express.com/shop?" />
         <meta charSet="UTF-8" />

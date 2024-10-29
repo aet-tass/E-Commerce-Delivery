@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { Sidebar } from "../components/sidebar";
+import { myOrdersLogic } from "./pages";
+import './myOrders.css'
 
 
 export function MyOrders(){
@@ -11,7 +13,7 @@ export function MyOrders(){
 
     return (
         <div className="dashboard-container">
-  {/* Sidebar */}
+  Sidebar
   <Sidebar />
   {/* Main Content */}
   <main className="orders-main">

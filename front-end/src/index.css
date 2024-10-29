@@ -36,6 +36,15 @@
   --accent-color-2-settings: #FFB54B;
   --bg-color-settings: #f5f7fa;
   --text-color-settings: #2c3e50;
+
+
+--primary-color-myOrders: #FF4B8B;
+--secondary-color-myOrders: #8B54FF;
+--accent-color-1-myOrders: #FF8B4B;
+--accent-color-2-myOrders: #FFB54B;
+--bg-color-myOrders: #f5f7fa;
+--text-color-myOrders: #2c3e50;
+--sidebar-width-myOrders: 250px;
 }
 * {
   margin: 0;

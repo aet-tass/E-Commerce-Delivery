@@ -11,6 +11,7 @@ import { Notifications } from "./pages/notifications";
 import { Admin } from "./pages/admin";
 import { ManageUsers } from "./pages/manageUsers";
 import { ManageProducts } from "./pages/manageProducts";
+import { NewProduct } from "./pages/newProduct";
 
 
 
@@ -28,8 +29,10 @@ function App() {
       <Route path="/shop" element={<Shop />} /> 
       <Route path="/notifications" element={<Notifications />} /> 
       <Route path="/admin" element={<Admin />} /> 
-      <Route path="ManageUsers" element={<ManageUsers />} /> 
-      <Route path="ManageProducts" element={<ManageProducts />} /> 
+      <Route path="/ManageUsers" element={<ManageUsers />} /> 
+      <Route path="/ManageProducts" element={<ManageProducts />} /> 
+      <Route path="/newProduct" element={<NewProduct />} /> 
+
 
 
 

@@ -1,0 +1,117 @@
+/* Basic layout for dashboard and sidebar */
+.dashboard-container {
+    display: flex;
+}
+
+.dashboard-main {
+    margin-left: var(--sidebar-width);
+    padding: 30px;
+    width: calc(100% - var(--sidebar-width));
+}
+
+/* Header styling */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Form styling */
+.new-product-form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.form-label:hover {
+    color: var(--primary-color);
+}
+
+.form-input,
+.new-product-form input[type="text"],
+.new-product-form input[type="number"],
+.new-product-form select,
+.new-product-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-input:focus,
+.new-product-form input[type="text"]:focus,
+.new-product-form input[type="number"]:focus,
+.new-product-form select:focus,
+.new-product-form textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+    background-color: #fff;
+}
+
+/* Button styling */
+.add-product-btn,
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.add-product-btn:hover,
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-main {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

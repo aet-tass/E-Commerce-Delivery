@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./manageProducts.css";
 import { dashboardLogic } from "./pages";
 import { AdminSidebar } from "../components/adminSideBar";
@@ -10,17 +11,23 @@ const products = [
 ];
 
 export function ManageProducts() {
+    const navigate = useNavigate();
+
     useEffect(() => {
         dashboardLogic();
     }, []);
-    
+    const handleAddProduct = () => {
+        navigate("/newProduct");  // Navigate to the NewProduct page
+    };
     return (
         <div className="dashboard-container">
             <AdminSidebar />
             <main className="dashboard-main">
                 <div className="dashboard-header">
                     <h1 className="welcome-text">Manage Products</h1>
-                    <button className="add-product-btn">Add New Product</button>
+                    <button className="add-product-btn" onClick={handleAddProduct}>
+                        Add New Product
+                    </button>
                 </div>
                 <div className="products-grid">
                     {products.map(product => (

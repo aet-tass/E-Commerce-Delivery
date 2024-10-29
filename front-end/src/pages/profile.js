@@ -113,33 +113,6 @@ export function Profile(){
           </div>
         </div>
       </div>
-      <div className="profile-section">
-        <div className="section-title">Recent Notifications</div>
-        <div className="notification-item">
-          <div className="notification-icon">
-            <i className="fas fa-box" />
-          </div>
-          <div className="notification-content">
-            <div className="notification-title">Order Delivered</div>
-            <div className="notification-text">
-              Your order #ORD-001 has been delivered successfully.
-            </div>
-            <div className="notification-time">2 hours ago</div>
-          </div>
-        </div>
-        <div className="notification-item">
-          <div className="notification-icon">
-            <i className="fas fa-tag" />
-          </div>
-          <div className="notification-content">
-            <div className="notification-title">Special Offer</div>
-            <div className="notification-text">
-              Get 20% off on your next purchase using code SAVE20.
-            </div>
-            <div className="notification-time">1 day ago</div>
-          </div>
-        </div>
-      </div>
     </div>
   </main>
 </div>

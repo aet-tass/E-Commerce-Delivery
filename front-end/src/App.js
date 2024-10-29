@@ -8,6 +8,8 @@ import { Profile } from './pages/profile';
 import { Settings } from './pages/settings';
 import { Shop } from "./pages/shop";
 import { Notifications } from "./pages/notifications";
+import { Admin } from "./pages/admin";
+
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       <Route path="/settings" element={<Settings/>} />
       <Route path="/shop" element={<Shop />} /> 
       <Route path="/notifications" element={<Notifications />} /> 
+      <Route path="/admin" element={<Admin />} /> 
+
 
     </Routes>
     </BrowserRouter>  

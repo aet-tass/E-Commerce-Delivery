@@ -34,4 +34,4 @@ export function Notifications() {
     );
 }
 
-export default Notification;
+export default Notifications;

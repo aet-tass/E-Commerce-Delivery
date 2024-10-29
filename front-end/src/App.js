@@ -10,6 +10,8 @@ import { Shop } from "./pages/shop";
 import { Notifications } from "./pages/notifications";
 import { Admin } from "./pages/admin";
 import { ManageUsers } from "./pages/manageUsers";
+import { ManageProducts } from "./pages/manageProducts";
+
 
 
 
@@ -27,6 +29,8 @@ function App() {
       <Route path="/notifications" element={<Notifications />} /> 
       <Route path="/admin" element={<Admin />} /> 
       <Route path="ManageUsers" element={<ManageUsers />} /> 
+      <Route path="ManageProducts" element={<ManageProducts />} /> 
+
 
 
 

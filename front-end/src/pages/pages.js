@@ -142,3 +142,33 @@ const Settings = () => {
 };
 
 export default Settings;
+
+
+export function myOrdersLogic(){
+    const currentPath = window.location.pathname;
+    document.querySelectorAll('.nav-link').forEach(link => {
+      if (link.getAttribute('href').endsWith(currentPath)) {
+        link.classList.add('active');
+      }
+    });
+
+    // Filter functionality
+    document.querySelector('.filter-input').addEventListener('input', function(e) {
+      // Add search filter logic here
+    });
+
+    document.querySelectorAll('.filter-select').forEach(select => {
+      select.addEventListener('change', function(e) {
+        // Add filter logic here
+      });
+    });
+
+    // Pagination functionality
+    document.querySelectorAll('.page-button').forEach(button => {
+      button.addEventListener('click', function() {
+        document.querySelector('.page-button.active').classList.remove('active');
+        this.classList.add('active');
+        // Add pagination logic here
+      });
+    });
+}

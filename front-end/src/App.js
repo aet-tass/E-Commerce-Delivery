@@ -19,6 +19,7 @@ function App() {
       <Route path="/profile" element={<Profile/>} />
       <Route path="/settings" element={<Settings/>} />
       <Route path="/myOrders" element={<MyOrders/>} />
+      <Route path="/shop" element={<Shop/>} />
     </Routes>
     </BrowserRouter>  
 

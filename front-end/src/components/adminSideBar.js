@@ -15,27 +15,21 @@ export function AdminSidebar() {
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/admin/users" className="nav-link">
+                    <Link to="/ManageUsers" className="nav-link">
                         <i className="fas fa-users" />
                         <span>Users</span>
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/admin/orders" className="nav-link">
+                    <Link to="/ManageOrders" className="nav-link">
                         <i className="fas fa-box" />
                         <span>Orders</span>
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/admin/products" className="nav-link">
+                    <Link to="/ManageProducts" className="nav-link">
                         <i className="fas fa-box-open" />
                         <span>Products</span>
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/admin/notifications" className="nav-link">
-                        <i className="fas fa-bell" />
-                        <span>Notifications</span>
                     </Link>
                 </li>
             </ul>

@@ -9,6 +9,8 @@ import { Settings } from './pages/settings';
 import { Shop } from "./pages/shop";
 import { Notifications } from "./pages/notifications";
 import { Admin } from "./pages/admin";
+import { ManageUsers } from "./pages/manageUsers";
+
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
       <Route path="/shop" element={<Shop />} /> 
       <Route path="/notifications" element={<Notifications />} /> 
       <Route path="/admin" element={<Admin />} /> 
+      <Route path="ManageUsers" element={<ManageUsers />} /> 
+
 
 
     </Routes>

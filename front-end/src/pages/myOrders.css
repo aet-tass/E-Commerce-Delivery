@@ -5,7 +5,7 @@
   }
   
   .dashboard-sidebar {
-    width: var(200px);
+    width: var(--sidebar-width-myOrders);
     background: white;
     padding: 20px;
     box-shadow: 2px 0 10px rgba(0,0,0,0.1);
@@ -242,16 +242,17 @@
   .timeline-item::after {
     content: '';
     position: absolute;
-    left: 5px;
-    top: 12px;
-    width: 2px;
-    height: 100%;
+    left: 2px;
+    top: 10px;
+    width: 1px;
+    height: 90%;
     background: #ddd;
   }
   
   .timeline-item:last-child::after {
     display: none;
   }
+  
   
   .timeline-date {
     font-size: 0.8em;

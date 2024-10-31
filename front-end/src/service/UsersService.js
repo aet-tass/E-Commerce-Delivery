@@ -1,7 +1,7 @@
 import axios from "axios";
 
 class UsersService {
-    static BASE_URL = "https://localhost:1010";
+    static BASE_URL = "http://localhost:1010";
     static async login(email, password) {
         try {
             const response = await axios.post(`${this.BASE_URL}/auth/login`, {

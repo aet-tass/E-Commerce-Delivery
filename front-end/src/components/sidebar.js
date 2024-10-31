@@ -21,10 +21,10 @@ export function Sidebar() {
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <a href="https://delivee.express.com/orders" className="nav-link">
-                        <i className="fas fa-box" />
-                        <span>My Orders</span>
-                    </a>
+                    <Link to="/myorders" className="nav-link">
+                    <i className="fas fa-box" />
+                    <span>My orders</span>
+                    </Link>
                 </li>
                 <li className="nav-item">
                     <Link to="/profile" className="nav-link">

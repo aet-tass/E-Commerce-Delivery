@@ -12,6 +12,8 @@ import { Admin } from "./pages/admin";
 import { ManageUsers } from "./pages/manageUsers";
 import { ManageProducts } from "./pages/manageProducts";
 import { NewProduct } from "./pages/newProduct";
+import { MyOrders } from "./pages/myorders";
+
 
 
 
@@ -31,7 +33,9 @@ function App() {
       <Route path="/admin" element={<Admin />} /> 
       <Route path="/ManageUsers" element={<ManageUsers />} /> 
       <Route path="/ManageProducts" element={<ManageProducts />} /> 
-      <Route path="/newProduct" element={<NewProduct />} /> 
+      <Route path="/newProduct" element={<NewProduct />} />
+      <Route path="/myorders" element={<MyOrders />} /> 
+ 
 
 
 

@@ -55,6 +55,17 @@
 --bg-light-shop: #FDF9F3;     /* Very light warm background */
 --text-dark-shop: #2C3E50;    /* Deep blue-gray */
 --text-light-shop: #95A5A6;   /* Soft gray */
+
+
+--primary-products: #8E44AD;      /* Purple */
+--prim-dark-products: #6C3483; /* Darker purple */
+--secondary-products: #F39C12;    /* Orange */
+--accent-products: #FFE066;       /* Soft yellow */
+--success-products: #E67E22;      /* Deep orange */
+--danger-products: #FF5E7D;       /* Soft pink */
+--bg-light-products: #FDF9F3;     /* Very light warm background */
+--text-dark-products: #2C3E50;    /* Deep blue-gray */
+--text-light-products: #95A5A6;   /* Soft gray */
 }
 * {
   margin: 0;

@@ -2,6 +2,7 @@ import React from 'react';
 import { ProductsLopgic } from './pages';
 import './Products.css';
 import { useEffect } from 'react';
+import { SidebarAdmin } from '../components/SideBarAdmin';
 
 
 
@@ -11,7 +12,9 @@ export function Products(){
 }, []);
 
 
-    return (<>
+    return (
+        <div className="dashboard-container">
+        <SidebarAdmin />
         {/* Main Content */}
         <main className="main-content">
           <div className="search-bar">
@@ -386,7 +389,7 @@ export function Products(){
             <i className="fas fa-plus" />
           </button>
         </main>
-      </>
+      </div>
     );
 
 }
